@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: linear-gradient(to right, #f55555, #f454a5);
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-top: 50px;
+}
+.runtext {
+    color: rgb(255, 0, 0);
+}
+.formbox{
+    width: 50%; 
+    height: 100%;
+    padding: 40px;
+    align-items: center;
+    margin-left: 330px;
+    background-color: white;
+    border-radius: 25px;
+}
+fieldset {
+    border: 2px solid #797979;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+legend {
+    font-weight: bold;
+}
+label {
+    padding: 10px;
+    display: block;
+    margin-bottom: 8px;
+    color: rgb(130, 130, 130);
+}
+input[type="text"], input[type="email"], input[type="password"], textarea, select {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #626262;
+    border-radius: 4px;
+}
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
+}
+input[type="file"] {
+    width: 95%;
+    color: rgb(255, 255, 255);
+    border: 2px solid #d80000;
+    padding: 0.2em 0.4em;
+    border-radius: 0.2em;
+    background-color: #000000;
+    transition: 1s;
+}
+
+.btn{
+    padding: 50px;
+    display: flex;
+    justify-content:space-around;
+}
+
+input[type="reset"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 6px 6px black;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 6px 6px black;
+}
+input[type="reset"]:hover {
+    background-color: #f80c0c;
+}
+input[type="submit"]:hover {
+    background-color: #326bfc;
+}

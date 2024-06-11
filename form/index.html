@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration Form</title>
+    <link href="style.css" rel="stylesheet">
+   
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="/submit" method="post">
+        <div class="formbox">
+        <h2> Welcome to Company </h2>
+        <marquee class="runtext" width="100%" direction="left" height="100px">
+            The only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle. As with all matters of the heart, you’ll know when you find it.
+            </marquee>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Details</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label for="bio">Bio:</label>
+            <textarea id="bio" name="bio" rows="4"></textarea>
+            
+            <label for="hobbies">Hobbies:</label>
+            <input type="checkbox" id="hobby1" name="hobbies" value="Reading">Reading
+            <input type="checkbox" id="hobby2" name="hobbies" value="Traveling">Traveling
+            <input type="checkbox" id="hobby3" name="hobbies" value="Gaming">Gaming
+            
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">Male
+            <input type="radio" id="female" name="gender" value="Female">Female
+            <input type="radio" id="other" name="gender" value="Other">Other
+            
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" list="countrylist">
+            <datalist id="countrylist">
+                <option value="United States">
+                <option value="Canada">
+                <option value="United Kingdom">
+                <option value="Australia">
+                <option value="India">
+            </datalist>
+            
+            <label for="occupation">Occupation:</label>
+            <select id="occupation" name="occupation">
+                <option value="Student">Student</option>
+                <option value="Employed">Employed</option>
+                <option value="Self-Employed">Self-Employed</option>
+                <option value="Unemployed">Unemployed</option>
+            </select>
+            <label> Photo </label>
+            <input type="file" value="upload resume" name="resume">
+            <label> Resume </label>
+            <input type="file" value="upload resume" name="resume">
+        </fieldset>
+    </div>
+    <div class="btn">
+        <input type="reset" value="clear">
+        <input type="submit" value="Register">
+    </div>
+    </form>
+
+
+</body>
+</html>
